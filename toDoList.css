@@ -1,0 +1,199 @@
+body{
+    background-image: url("media/back2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+}
+
+body,html{
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+.container{
+	padding: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  [class="container"]{
+  	width: 300px;
+  }
+
+}
+
+#home{
+	margin: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+	#home>img{
+		height: 50px !important;
+		width: 150px !important;
+
+	}
+}
+
+#add{
+	border: 2px solid black;
+	background-color: rgb(255, 219, 147);
+	font-weight: bold;
+	border-radius: 30px;
+}
+
+#del{
+	margin-left: 10px;
+	margin-top: 0;
+	 border: 2px solid black;
+        border-radius: 30px;
+        background-color: rgb(212, 106, 106); 
+        color: black;
+        font-weight: bold;
+}
+
+h1{
+	margin-left: 10px;
+	color: black;
+	font-weight: bold;
+	font-family: 'Ultra', sans-serif;   
+	font-size: 36px;
+	text-transform: uppercase;
+	text-shadow: 3px 3px LightGreen, 4px 4px green;
+
+
+
+}
+
+ul{
+	padding: 10%;
+	list-style: decimal;
+}
+
+li{
+	cursor: pointer;
+	position: relative;
+	padding: 12px 8px 12px 40px;
+	background: Grey;
+	font-size: 18px;
+	transition: 0.2s;
+
+}
+
+ li:nth-child(odd){
+	background: pink;
+}
+
+
+#titlediv{
+margin-left: 10px;
+display: inline-block;
+}
+#edittitle{
+	display: inline-block;
+	margin-left: 10px;
+
+}
+
+.editTitleButton{
+	border: 2px solid black;
+	background-color: rgb(255, 219, 147);
+	font-weight: bold;
+	border-radius: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+#titlediv,#edittitle{
+	display: inline;
+
+}
+}
+
+#enter{
+	border: 2px solid black;
+	background-color: rgb(255, 219, 147);
+	font-weight: bold;
+	border-radius: 30px;
+}
+
+#inputitem{
+	margin-left: 10px;
+}
+
+.delButton{
+       position: absolute;
+       right: 0;
+        margin-right: 10px;
+        border: 2px solid black;
+        border-radius: 50px;
+        background-color: yellow;
+        color: red;
+        font-weight: bold;
+       
+        
+
+}
+
+.editButton{
+	position: absolute;
+	right: 60px;
+	margin-right: 10px;
+	 border: 2px solid black;
+        border-radius: 50px;
+        background-color: LightGreen;
+        color: green;
+        font-weight: bold;
+	
+}
+
+.newdiv{
+	margin-left: 10px;
+	display: inline-block;
+
+}
+
+/*Edit Title*/
+
+.newdiv label{
+ font-family: 'Dancing Script', cursive; 
+	text-shadow: 0 0 5px yellow;
+	font-weight: bold;
+	padding-right: 10px;
+	font-size: 20px;
+}
+
+.newdiv input[type=text] {
+  display:none;
+}
+
+.newdiv.editMode input[type=text] {
+  display:inline-block;
+  margin-right: 10px;
+}
+
+.newdiv.editMode label {
+  display:none;
+}
+
+
+/* Edit Task */
+ul li input[type=text] {
+  display:none;
+}
+
+ul li.editMode input[type=text] {
+  display:inline-block;
+  margin-right: 10px;
+}
+
+ul li.editMode label {
+  display:none;
+}
+
+
+.taskcompleted{
+	text-decoration: line-through;
+}
+
+.taskincomplete{
+	text-decoration: none;
+}
+

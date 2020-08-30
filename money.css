@@ -1,0 +1,240 @@
+body{
+    background-image: url("media/moneyback.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;	
+}
+
+body,html{
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+#home{
+	margin: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+	#home>img{
+		height: 50px !important;
+		width: 150px !important;
+
+	}
+}
+
+.title{
+	margin: 20px;
+	width: 350px;
+	height: auto;
+	color: black;
+	background-image: linear-gradient(to right, #109CFF,#79C7FF);
+	border: 3px inset #00518B;
+	border-radius: 20px;
+	text-align: center;
+	margin-bottom: 10px;
+	font-weight: bolder;
+	font-family: Arial;
+	font-size: 15px;
+}
+
+@media only screen and (max-width: 768px){
+	.title{
+		width: 330px;
+		margin: 10px;
+	}
+} 
+
+.calculate{
+	margin: 20px;
+	width: 400px;
+}
+
+@media only screen and (max-width: 768px){
+	.calculate{
+		width: 350px;
+		margin: 10px;
+	}
+}
+.clearIncome{
+	border-radius: 10px;
+	background-image: linear-gradient(to right, #FF6B6B,#FFBABA);
+	border: 1px solid red;
+
+}
+
+.clearExpense{
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #FF6B6B,#FFBABA);
+  border: 1px solid red;
+}
+
+#income-container{
+	display: grid;
+	grid-template-columns: 190px 190px 100px;
+	column-gap: 10px;
+	font-size: 20px;
+	
+
+}
+
+
+#expense-container{
+	display: grid;
+	grid-template-columns: 190px 190px 100px;
+	column-gap: 10px;
+	font-size: 20px;
+	
+
+}
+#balance-container{
+	display: grid;
+	grid-template-columns: 200px 200px;
+	column-gap: 10px;
+	font-size: 20px;
+	
+
+}
+
+ #income-val{
+ 	color: LightGreen;
+ }
+
+ #expense-val{
+ 	 color: #FF5454;
+ }
+
+ #balance-val{
+ 	background-color: white;
+ 	padding-left: 5px;
+ 	padding-top: 5px;
+ 	padding-bottom: 5px;
+ 	border-radius: 10px;
+ 	color: blue;
+ 	font-weight: bold;
+ }
+
+ #income,#expense,#balance{
+ 	color: white;
+ 	font-family: 'Fredoka One', cursive;
+ }
+
+hr{
+	border : 1px dashed black;
+	
+}
+
+@media only screen and (max-width: 768px){
+	#income-container, #expense-container, #balance-container{
+	display: grid;
+	grid-template-columns: 100px 140px 10px;
+	column-gap: 10px;
+	margin-left: 10px;
+	font-size: 20px;
+	padding: 3px;
+
+	}
+
+	hr{
+		margin: 10px;
+	}
+} 
+#catlabel{
+	
+	font-weight: bold;
+	margin: 10px;
+	background-color: LightBlue;
+	padding: 5px;
+}
+
+input,select{
+	width: 200px;
+	border-radius: 10px;
+	padding: 5px;
+	margin: 10px;
+}
+
+.colapse{
+	background-color: blue;
+	color: white;
+	cursor: pointer;
+	padding: 5px;
+	text-align: center;
+	width: 100px;
+	margin: 10px;
+	font-weight: bolder;
+	border-radius: 30px;
+	border: 2px solid blue;
+
+}
+
+.active,.colapse:hover{
+	background-color: white;
+	color: blue;
+}
+
+.content{
+	display: none;
+	overflow: hidden;
+	width: 100%;
+}
+
+.add{
+	background-color: yellow;
+	border-radius: 50px;
+	border: 2px solid black;
+	font-weight: bold;
+}
+
+ul{
+	list-style: none;
+	padding: 0;
+	
+}
+
+li{
+	cursor: pointer;
+	position: relative;
+	/*padding: 12px 8px 12px 10px;*/
+	font-size: 18px;
+	display: grid;
+	grid-template-columns: auto auto 20px;
+	column-gap: 10px;
+}
+
+@media only screen and (max-width: 768px){
+        ul{
+        	width: 200px;
+        	margin-left: 10px;
+        }
+        li{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+	}
+
+.delexp{
+	    align-self: center;
+        height: 20px;
+        border: 1px solid black;
+        border-radius: 50px;
+        background-color: LightGrey;
+        font-weight: bold;
+}
+
+.categoryLabel{
+  color: white;
+  margin: 10px;
+  width: 200px;
+ 
+}
+
+.expenseLabel{
+ color: white;
+ margin: 10px;
+max-width: 100px;
+}
+
+.negBal{
+      color: red;
+}

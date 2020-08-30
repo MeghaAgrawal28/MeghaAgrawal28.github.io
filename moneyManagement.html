@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spending Tracker</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="money.css">
+
+</head>
+<body>
+  <div id="home">
+  <img src="media/home.png" onclick="location.href='index.html'" style="width: 300px; height: 100px">
+ </div>
+ 
+ <div class="title"> <h2> Spending Tracker</h2></div>
+ 
+<div class="calculate">
+ 
+ 	<div id="income-container">
+     	<div id="income">Income:</div>
+     	<div id="income-val">0</div>
+     	<div id="delIncome"><button type="button" class="clearIncome">Clear Income</button></div>
+ 
+ 	</div>
+ 		<br>
+ 	<div id="expense-container">
+     	<div id="expense">Expenses:</div>
+     	<div id="expense-val">0</div>
+     	<div id="delExpense"><button type="button" class="clearExpense">Clear all Expenses</button></div>
+
+ 	</div>
+      <br>
+      <ul id="ul"></ul>
+  	<hr>
+    <br>
+ 	<div id="balance-container">
+     	<div id="balance">Balance:</div>
+     	<div id="balance-val">0</div>
+
+ 	</div>
+
+</div>
+        <br><br>
+ <form id="form">
+    <button type="button" class="colapse"> +/- Income </button>
+    <div class="content">
+  
+    	<input type="number" name="income" id="inputIncome" placeholder="ADD Amount">
+    	<button type="button" class="add" id="AddIncome">Enter</button>
+
+    	<input type="number" name="income" id="inputdelIncome" placeholder="Delete Amount">
+    	<button type="button" class="add" id="DelIncome">Delete</button>
+    	
+    </div>
+
+  <button type="button" class="colapse"> + Expense </button>
+    <div class="content">
+    	<label for="category" id="catlabel">Category:</label>
+    	<select id="category" name="category">
+          <option>Clothes</option>
+          <option>Food</option>
+          <option>Shopping</option>
+          <option>Entertainment</option>
+          <option>Fuel</option>
+          <option>Holidays</option>
+          <option>Travel</option>
+          <option>Kids</option>
+          <option>Gifts</option>
+          <option>General</option>
+          <option>Eating Out</option>
+
+    	</select>
+    	
+    	<input type="number" name="expense" placeholder="Amount" id="inputExpense">
+    	<button type="button" class="add" id="AddExpense">Enter</button>
+   </div>
+   <button type="button" class="colapse" id="add" style="width: 150px"> +/- Category</button>
+  <div class="content">
+     
+    	<input type="text" name="cat" placeholder="Add Category" id="catInput">
+    	<button type="button" class="add" id="AddNewCategory">Add</button>
+    	<input type="text" name="cat" placeholder="Delete Category" id="delCatInput">
+    	<button type="button" class="add" id="DeleteNewCategory">Delete</button>
+    </div>
+   </form>
+
+<script type="text/javascript" src="money.js"></script>
+</body>
+</html>
